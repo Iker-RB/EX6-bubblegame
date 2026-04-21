@@ -63,6 +63,11 @@ int main() {
             }
         }
 
+        // update movement of the bubbles
+        for (auto &b : bubbles) {
+            b.Update();
+        }
+
         //draw in the canvas
         BeginDrawing();
         ClearBackground(RAYWHITE);

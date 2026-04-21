@@ -10,6 +10,9 @@ public:
     //Draw the bubble
     void Draw() const;
 
+    //For the movement of bubbles
+    void Update();
+
     //Check for the bubble still active
     bool IsClicked(float moux, float mouy);
 
@@ -19,5 +22,6 @@ private:
     float y;
     float radio;
     Color color; //color of the bubble - special data type from raylib
+    float vx, vy; //velocity of the bubble
     
 };
